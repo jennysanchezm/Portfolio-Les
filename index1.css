@@ -1,5 +1,6 @@
 /* IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https: //fonts.googleapis.com/css2? family= DM+Sans & display=swap" rel="stylesheet");
 
 
 :root {
@@ -37,16 +38,20 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--primary);
-    margin: 56px 136px 400px 136px;
+    margin: 56px 56px 56px 56px;
 }
 
 #logo{
-    width:250px;
-    margin: 0px 600px 80px 0px;
+    width: 176px;
+    margin: 8px 0px 72px 0px;
+}
+
+header{
+    padding: 0px 104px 0px 104px;
 }
 
 #idioma{
-    width: 128px;
+    width: 80px;
     display: flex;
     flex-direction: row;
     color:#9B9B9B;
@@ -63,41 +68,51 @@ a {
 ul{
     text-decoration: none;
     list-style-type: none;
+    font-size: 1.1em;
     font-family: 'DM Sans', sans-serif;
     display: flex;
     flex-direction: row;
-    width: 600px;
+    width: 720px;
     justify-content: space-between;
     margin-bottom: 104px;
+    gap: 40px;
 }
 
-.container1{
-    max-width: 1000px;
-    background-color: #E5E5E5;
-    margin-bottom: 0px;
+#caso1{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: #EAEAEA;
+    margin: 80px;
     padding: 56px;
+    height: 360px;
 }
 
-.container2{
-    max-width: 1000px;
-    margin: 0px;
-    background-color: #E5E5E5;
+#caso2{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: #EAEAEA;
     padding: 56px;
+    margin: 80px;
+    height: 360px;
 }
+
 h1{
-    font-size: 2.8em;
+    font-size: 2.4em;
     font-family: 'DM Sans', sans-serif;
     color: var(--primary);
-    margin: 0px 0px 24px 0px;
-    
+    margin: 0px 0px 0px 0px;
+    width: 600px;
 }
 
 .casos{
-    margin-top: 20px;
+    display:flex;
+    flex-direction: row;
+
 }
 .fotos{
-    width: 300px;
-
+    width: 320px;
 }
 
 #slash{
@@ -105,12 +120,32 @@ h1{
 }
 p{
     font-size: 1.4em;
-    flex-wrap: wrap;
-    width: 560px;
+    width: 360px;
 }
 
-.up{
+
+
+.description{
     display: flex;
     flex-direction: row;
+    margin: 16px;
+    justify-content: space-around;
     
+}
+
+#fotoLeslie{
+    width: 400px;
+}
+
+#presentacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;}
+
+#historia{
+    display: flex;
+    flex-direction:row;
+}
+.secciones{
+    margin-bottom: 56px;
 }

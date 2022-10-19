@@ -5,26 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Leslie</title>
-    <link rel="stylesheet" href="./css/index1.css">
+    <link rel="stylesheet" href="./index1.css">
 </head>
 <body>
     <header>
-        <div class="up">
+        <div>
             <nav>
                <a href="index1.html">
-                 <img id= "logo" src="img/LESLIE SANCHEZ.png">
+                 <img id= "logo" src="./img/logo.png">
                </a>
-            </nav>
-            <nav id="idioma">
-                    <a href="top">ENGLISH</a>      
-                     <p id="slash">
-                        /
-                     </p>
-                    <a href="top">ESPAÑOL</a>
             </nav>
         </div>    
             <section>
-                <nav>
+                <nav id="navigation">
                     <ul>
                         <li>
                             <a href="Casos-de-estudio.html">CASOS DE ESTUDIO</a>
@@ -43,8 +36,7 @@
             </section>
     </header>
     <main>
-      <div>
-        <section class="casos container1">
+        <section id="caso1">
             <article>
                 <h1>
                     Rediseño banca móvil BBVA
@@ -52,11 +44,12 @@
                 <p>
                     Un sprint de diseño de 4 meses para mejorar la experiencia de usuario al realizar un pago.
                 </p>
-                <img src="./img/Imagen BBVA.png" class="fotos" alt="BBVA">
             </article>
+            <div class="imagen">
+                <img src="./img/Imagen BBVA.png" class="fotos" alt="BBVA">
+            </div>       
         </section>
-      </div>
-        <section class="casos container2">
+        <section id="caso2">
             <article>
                 <h1>
                     Diseño de una página para una tienda de electrodomésticos
@@ -64,8 +57,10 @@
                 <p>
                     Un sprint de diseño de 2 meses para construir una página web.
                 </p>
-                <img src="./img/Online Store.png" class="fotos" alt="Online store">
             </article>
+            <div class="imagen">
+                <img src="./img/Online Store.png" class="fotos" alt="Online store">
+            </div>
         </section>
     </main>
 </body>
