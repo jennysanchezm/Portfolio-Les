@@ -154,6 +154,12 @@ p{
     margin-bottom: 56px;
 }
 
+.diseño{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 aside{
     font-size: 0.8em;
 }
