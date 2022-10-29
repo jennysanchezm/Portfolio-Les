@@ -44,13 +44,17 @@ body {
 #logo{
     width: 176px;
     margin: 8px 0px 72px 0px;
-    
 }
 
 header{
     padding: 0px 104px 0px 104px;
+
 }
 
+.navigation{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
 
 .navigation ul li a{
     text-decoration: none;
@@ -69,6 +73,10 @@ header{
 
 .navigation ul li a:hover{
     color: var(--primary);
+}
+
+.hamburguer{
+    display:none;
 }
 
 ul{
@@ -197,7 +205,6 @@ aside{
 .parrafo{
     padding-top: 32px;
     color: var(--primary);
-    
 }
 
 #bottom{
@@ -213,16 +220,6 @@ aside{
     margin-bottom: 32px;
 }
 
-#contacto{
-    width: 600px;
-    margin-top: 40px;
-}
-
-#contactar{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
 
 #articulo {
     display: flex;
@@ -248,9 +245,86 @@ aside{
     margin-bottom: 24px;
 }
 
+/* Contacto */
+
+#contacto{
+    width: 600px;
+    margin-top: 32px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+#contactar{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* DISEÑO */
+
+
+
+/* MEDIAS */
+
+@media screen and (max-width: 864px) {
+.navigation {
+        display: none;
+    }
+.hamburguer{
+    display:block;
+}
+
+}
+
+@media screen and (max-width: 1138px) {
+.titulo{
+    font-size: 2em;
+
+}
+ 
+.parrafo{
+    font-size: 1em;
+}
+
+.fotos{
+    width: 300px;
+    height: 240px;
+}
+
+#caso1{
+    flex-direction: column;
+    justify-content: center;
+}
+
+#caso2{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.diseño{
+    align-content: center;
+}
+
+}
+
+@media screen and (max-width: 637px){
+#contacto{
+    font-size: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
 /* BOOTSTRAP DESREBOOT */
 
-ul{
+ul {
     padding:0px;
 }
+
+a {
+    text-decoration: none;
+ }
 
