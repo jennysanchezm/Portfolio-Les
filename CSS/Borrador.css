@@ -1,0 +1,657 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https: //fonts.googleapis.com/css2? family= DM+Sans & display=swap" rel="stylesheet");
+
+
+:root {
+    /* Palette*/
+    --primary: #000000; 
+    --secondary: ;
+    --light: #9B9B9B;
+    --accent: #494949; 
+
+    /*Font sizes*/
+    --text-xxl: 2.4em;
+    --text-xl: 2em; 
+    --text-lg: 3.2em;
+    --text-md: 2em; 
+    --text-sm: 1.4em; 
+    --text-xs: 0.4em; 
+
+    /* Spacings*/
+ 
+}
+
+
+/* NORMALIZE */
+
+/* * {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html {
+    font-family: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary);
+    margin: 56px 56px 56px 56px;
+} */
+
+/* #logo{
+    width: 176px;
+    margin: 8px 0px 72px 0px;
+} */
+
+header{
+    padding: 0px 104px 0px 104px;
+
+}
+
+/* .navigation{
+    display: flex;
+    /* flex-wrap: wrap; */
+} */
+
+/* .navigation ul li a{
+    text-decoration: none;
+    flex-direction: row;
+    color:#9B9B9B;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s;
+} */
+
+.navigation ul li a:hover, .navigation ul li a:focus {
+    background-size: 100% 1px;
+}
+
+.navigation ul li a:hover{
+    color: var(--primary);
+}
+
+.hamburguer{
+    display:none;
+}
+
+/* ul{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.1em;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.05em;
+    display: flex;
+    flex-direction: row;
+    width: 720px;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    gap: 40px;
+
+} */
+
+
+
+/* #caso2{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: #e9edf0;
+    margin: 80px 64px 80px;
+    padding: 56px;
+    height: 400px;
+    transition: transform 0.4s;
+    border-style: solid;
+    border-color: #ccd4d9;
+    border-width: 0.5px;
+} */
+
+/* #caso2:hover{
+    transform: scale(1.1);
+} */
+
+
+
+
+
+/* .fotos{
+    width: 360px;
+} */
+
+
+p{
+    font-size: 1.4em;
+    width: 360px;
+    text-decoration: none;
+}
+
+.imagen{
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    margin: 16px;
+    justify-content: space-around;
+    
+}
+
+#fotoLeslie{
+    width: 400px;
+}
+
+#presentacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;}
+
+#historia{
+    display: flex;
+    flex-direction:row;
+}
+
+.secciones{
+    margin-bottom: 56px;
+}
+
+.diseño{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+aside{
+    font-size: 0.8em;
+}
+
+
+.parrafo{
+    padding-top: 32px;
+    color: var(--primary);
+}
+
+/* #bottom{
+    font-size: 1em;
+    margin: 320px 400px 40px 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  
+} */
+
+/* #hola{
+    margin-bottom: 32px;
+}
+
+
+#articulo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 240px;
+}
+
+#fotointerview{
+    width: 560px;
+    height: 420px;
+    margin: 32px 0px 32px 0px;
+}
+
+#infolectura{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 56px;
+    font-size: 0.8em;
+}
+
+.texto{
+    width: 560px;
+    margin-bottom: 24px;
+} */
+
+/* Contacto */
+
+/* #contacto{
+    width: 600px;
+    margin-top: 32px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+#contactar{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* DISEÑO */
+
+
+
+/* MEDIAS NAV */
+/* 
+@media screen and (max-width: 864px) {
+.navigation {
+        display: none;
+    }
+.hamburguer{
+    display:none;
+}
+
+} */
+
+/* @media screen and (max-width: 637px){
+    #contacto{
+        font-size: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+
+
+/* MEDIA QUERY */
+
+/* CONTAINER */
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container{
+    margin: auto; 
+    width: 80%;
+    background-color: #e9edf0;
+    padding: 1.5em;
+    transition: transform 0.4s;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #ccd4d9;
+    border-width: 0.5px;
+    }
+
+.container:hover{
+        transform: scale(1.1);
+    }
+
+.card{
+    display: flex;
+    /* padding: 80px; */
+}
+
+.cards{
+    padding: 1.5em;
+}
+
+.card-col-body{
+    order: 1;
+    flex: 1;
+    display: flex;
+    padding-left: 32px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.card-col-img{
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content:center;
+}
+
+.card-title{
+    font-size: 2em;
+    font-family: 'DM Sans', sans-serif;
+    color:#000000;
+    font-weight: lighter;
+    margin-bottom: 24px;
+}
+.imagenBBVA{
+    width: 320px;
+}
+
+.card-parrafo{
+    color:#000000;
+    font-size: 1.3em;
+}
+
+
+    
+/* range: 1200px a 1400px */
+@media screen and (max-width: 1400px){
+    .container{
+        width: 80%;
+        background-color: #e9edf0;
+        padding: 1.5em;
+        transition: transform 0.4s;
+        text-decoration: none;
+        border-style: solid;
+        border-color: #ccd4d9;
+        border-width: 0.5px;
+        }
+    
+    .container:hover{
+            transform: scale(1.1);
+        }
+
+    .card{
+        display: flex;
+    }
+
+    .cards{
+        padding:1.5em;
+    }
+
+    .card-col-body{
+        order: 1;
+        flex: 1;
+        display: flex;
+        padding-left: 32px;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    .card-col-img{
+        order: 2;
+        flex: 1;
+        display: flex;
+        justify-content:center;
+    }
+    
+    .card-title{
+        font-size: 2em;
+        font-family: 'DM Sans', sans-serif;
+        color:#000000;
+        font-weight: lighter;
+        margin-bottom: 24px;
+    }
+    .imagenBBVA{
+        width: 320px;
+    }
+    
+    .card-parrafo{
+        color:#000000;
+        font-size: 1.3em;
+    }
+
+}
+
+/* range: 992px a 1999px */
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 80%;
+        background-color: #e9edf0;
+        padding: 1.5em;
+        transition: transform 0.4s;
+        text-decoration: none;
+        border-style: solid;
+        border-color: #ccd4d9;
+        border-width: 0.5px;
+        }
+    
+    .container:hover{
+            transform: scale(1.1);
+        }
+
+    .card{
+        display: flex;
+    }
+
+    .cards{
+        padding:1.5em;
+    }
+
+    .card-col-body{
+        order: 1;
+        flex: 1;
+        display: flex;
+        padding-left: 32px;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    .card-col-img{
+        order: 2;
+        flex: 1;
+        display: flex;
+        justify-content:center;
+    }
+    
+    .card-title{
+        font-size: 2em;
+        font-family: 'DM Sans', sans-serif;
+        color:#000000;
+        font-weight: lighter;
+        margin-bottom: 24px;
+    }
+    .imagenBBVA{
+        width: 280px;
+        height: 240px;
+    }
+    
+    .card-parrafo{
+        color:#000000;
+        font-size: 1.3em;
+    }
+
+}
+  
+
+
+/* range: 768px a 991px */
+@media screen and (max-width:992px){
+    .container{
+        width: 85%;
+        background-color: #e9edf0;
+        padding: 1em;
+        transition: transform 0.4s;
+        text-decoration: none;
+        border-style: solid;
+        border-color: #ccd4d9;
+        border-width: 0.5px;
+        }
+    
+    .container:hover{
+            transform: scale(1.1);
+        }
+
+    .card{
+            display: flex;
+            flex-direction: row;
+        }
+
+    .cards{
+        padding:0.5em;
+    }
+
+    .card-body{
+        max-width: 320px;
+    }
+
+    .card-col-body{
+        order: 1;
+        flex: 1;
+        display: flex;
+        padding: 0px;
+        max-width: 320px;
+     }
+
+    .card-col-img{
+    order: 2;
+    flex: 1;
+    display: flex;
+    align-items:center;
+    }
+
+    .card-title{
+        font-size: 1.3em;
+        font-family: 'DM Sans', sans-serif;
+        color:#000000;
+        font-weight: lighter;
+        margin-bottom: 24px;
+    }
+
+    .imagenBBVA{
+        width: 216px;
+        height: 176px;
+    }
+
+    .card-parrafo{
+        color:#000000;
+        font-size: 0.8em;
+        max-width: 320px;
+    }
+
+}
+
+/* range: 576px a 767px */
+@media screen and (max-width:768px){
+    .container{
+        width: 70%;
+        background-color: #e9edf0;
+        padding: 1em;
+        transition: transform 0.4s;
+        text-decoration: none;
+        border-style: solid;
+        border-color: #ccd4d9;
+        border-width: 0.5px;
+        }
+    
+    .container:hover{
+            transform: scale(1.1);
+        }
+
+    .card{
+    display: flex;
+    }
+    .cards{
+        padding:0.5em;
+    }
+
+    .card-body{
+        max-width: 240px;
+    }
+
+    .card-col-body{
+        order: 1;
+        flex: 1;
+        display: flex;
+        padding: 0px;
+        max-width: 240px;
+     }
+
+    .card-col-img{
+        order: 2;
+        flex: 1;
+        display: flex;
+        justify-content:center;
+    }
+    
+    .card-title{
+        font-size: 1.3em;
+        font-family: 'DM Sans', sans-serif;
+        color:#000000;
+        font-weight: lighter;
+        margin-bottom: 24px;
+    }
+    .imagenBBVA{
+        width: 200px;
+        height: 160px;
+    }
+
+    .card-parrafo{
+        color:#000000;
+        font-size: 0.8em;
+        max-width: 220px;
+    }
+}
+
+
+/* range: 0 a 575px */
+@media screen and (max-width:576px){
+    .container{
+        margin: 1em auto; 
+        width: 50%;
+        background-color: #e9edf0;
+        padding: 1.5em;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .card-col-body{
+        order: 1;
+        flex: 1;
+        display: flex;
+        text-align: center;
+        padding-left: 0px;
+        margin-bottom: 24px;
+    }
+
+    .card-col-img{
+        order: 2;
+        flex: 1;
+        display: flex;
+        justify-content:center;
+    }
+    
+    .imagenBBVA{
+        width: 280px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+
+/* BOOTSTRAP DESREBOOT */
+
+ul {
+    padding:0px;
+}
+
+a {
+    text-decoration: none;
+ }
+
+
+ 
