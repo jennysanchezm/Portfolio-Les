@@ -1,0 +1,58 @@
+*, *::after, *::before {
+    box-sizing: inherit;
+  }
+
+@mixin contenedor {
+    margin: 6em auto;
+    width: 90%;
+    background-color: #e9edf0;
+    padding: 1.5em;
+    transition: transform 0.4s;
+    border-style: solid;
+    border-color: $color-borde;
+    border-width: 0.5px;
+    font-family: "Poppins", sans-serif;
+        &:hover{
+            transform: scale(1.1);
+  }
+}
+
+.card-parrafo{
+    color: $color-texto;
+    letter-spacing: 0px
+}
+
+/* CONTAINER */
+
+  .container {
+    @include contenedor;
+  }
+  
+  
+.card {
+    display: flex;
+    align-items: center;
+        .card-col-img {
+            order: 2;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+              
+        
+        .card-col-body {
+            order: 1;
+            flex: 1;
+            display: flex;
+            padding-left: 32px;
+            align-items: center;
+                    
+                }
+                      
+            } 
+        }
+
+    
+h1 {
+    font-family: "DM Sans", sans-serif;
+    }
+

@@ -1,0 +1,36 @@
+li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    list-style-type: none;
+    color: $color-primario;
+    letter-spacing: 0.8px;
+  }
+
+  a:hover{
+    color: $color-texto;
+    transition: linear 0.2s;
+  }
+  
+  // nav {
+  //   margin: 88px;
+  // }
+
+  .menu ul {
+    display: flex;
+    gap: 56px;
+    margin-top: 40px;
+    font-size: larger;
+  }
+  
+
+  
+
+  
+  .hamburguesa {
+    max-width: 100%;
+  }
+  
