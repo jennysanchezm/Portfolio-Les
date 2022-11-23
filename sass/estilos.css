@@ -13,24 +13,28 @@ img {
 }
 
 @media screen and (max-width: 864px) {
-  .menu {
-    display: none;
+  .checkbtn {
+    display: block;
   }
 }
 @media screen and (min-width: 864px) {
-  #toggle-menu {
-    display: none;
-  }
-  .hamburguer {
-    display: none;
+  .checkbtn {
+    display: block;
   }
 }
 /* range: 1200px a 1400px */
 @media screen and (max-width: 1400px) {
-  .container {
+  .contenedores {
     width: 90%;
     background-color: #e9edf0;
     padding: 1.5em;
+  }
+  .titulosBBVA {
+    font-size: xx-large;
+  }
+  aside {
+    margin-top: 16px;
+    margin-left: 32px;
   }
   .card {
     display: flex;
@@ -41,6 +45,12 @@ img {
     flex: 1;
     display: flex;
     padding-left: 40px;
+  }
+  .secciones {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 56px;
+    margin-left: 80px;
   }
   .card-col-img {
     order: 2;
@@ -129,10 +139,27 @@ img {
   #infolectura {
     margin-bottom: 56px;
   }
+  .checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
 }
 /* range: 992px a 1999px */
 @media screen and (max-width: 1200px) {
-  .container {
+  body {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    margin: 56px;
+  }
+  .contenedores {
     margin: auto;
     width: 90%;
     background-color: #e9edf0;
@@ -270,13 +297,6 @@ img {
   #contacto {
     width: 440px;
   }
-  #toggle-menu {
-    width: 40px;
-    position: absolute;
-    top: 4.8rem;
-    right: 5.3rem;
-    cursor: pointer;
-  }
   #fotointerview {
     width: 520px;
     height: 380px;
@@ -291,6 +311,38 @@ img {
     margin-right: 0px;
     padding-right: 0px;
     width: 440px;
+  }
+}
+@media screen and (max-width: 864px) {
+  .checkbtn {
+    display: block;
+    position: relative;
+    bottom: 51px;
+  }
+  .menu {
+    width: 100%;
+    height: 100%;
+    background: gray;
+    transition: all 0.5s;
+    font-size: small;
+    position: fixed;
+    top: 130px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .menu {
+    display: block;
+  }
+  nav {
+    margin: 80px 0px 0px 0px;
+  }
+  li a:hover, li a.active {
+    background: none;
+    color: black;
+  }
+  #check:checked ~ ul {
+    left: 0;
   }
 }
 @media screen and (max-width: 817px) {
@@ -330,10 +382,6 @@ img {
   #fotoLeslie {
     width: 260px;
     height: 275px;
-  }
-  nav {
-    margin-left: 24px;
-    margin-right: 24px;
   }
   h2 {
     width: 500px;
@@ -425,7 +473,7 @@ img {
     display: flex;
     flex-direction: column;
     margin-bottom: 56px;
-    margin-left: 56px;
+    margin-left: 32px;
     max-width: 640px;
     text-align: initial;
     margin-top: 40px;
@@ -445,6 +493,10 @@ img {
     justify-content: center;
     margin-top: 40px;
   }
+  .titulosBBVA {
+    width: 320px;
+    font-size: 2em;
+  }
   .frameBBVA {
     width: 240px;
     height: 520px;
@@ -454,7 +506,7 @@ img {
     flex-direction: row;
   }
   aside {
-    margin-top: 64px;
+    margin-top: 80px;
     font-size: 14px;
     width: 200px;
     line-height: 1.6em;
@@ -626,13 +678,7 @@ img {
   box-sizing: inherit;
 }
 
-.card-parrafo {
-  color: black;
-  letter-spacing: 0px;
-}
-
-/* CONTAINER */
-.container {
+.contenedores {
   margin: 6em auto;
   width: 90%;
   background-color: #e9edf0;
@@ -643,10 +689,16 @@ img {
   border-width: 0.5px;
   font-family: "Poppins", sans-serif;
 }
-.container:hover {
+.contenedores:hover {
   transform: scale(1.1);
 }
 
+.card-parrafo {
+  color: black;
+  letter-spacing: 0px;
+}
+
+/* CONTAINER */
 .card {
   display: flex;
   align-items: center;
@@ -677,7 +729,6 @@ h1 {
   display: flex;
   flex-direction: column;
   margin-bottom: 56px;
-  margin-left: 80px;
   max-width: 640px;
   text-align: initial;
 }
@@ -706,14 +757,6 @@ h2 {
   flex-direction: row;
 }
 
-aside {
-  margin-top: 16px;
-}
-
-.titulosBBVA {
-  font-size: xx-large;
-}
-
 #contactar {
   display: flex;
   flex-direction: column;
@@ -739,7 +782,6 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: black;
-  margin: 56px;
 }
 
 #presentacion {

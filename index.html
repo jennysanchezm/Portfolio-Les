@@ -9,20 +9,24 @@
     <link rel="shortcut icon" href="./img/favicon.png">
     <title>Leslie Sanchez</title>
     <link rel="stylesheet" href="./CSS/estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
        <nav>
             <div class="logo">
-                <a href="./index.html"><img src="./img/LESLIE SANCHEZ.png" class="imagenlogo" alt="Logo"></a>
+                <a href="index.html"><img src="./img/LESLIE SANCHEZ.png" class="imagenlogo" alt="Logo"></a>
             </div>
-            <div id="toggle-menu">
-                <img src="./img/icons8-menu-rounded-30.png" class="hamburguesa" alt="menu-hamburguesa">
+            <div>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
             </div>          
             <div class="menu">
-                <ul >
+                <ul > 
                     <li>
-                        <a href="index.html" >CASOS DE ESTUDIO</a>
+                        <a class="active" href="index.html" >CASOS DE ESTUDIO</a>
                     </li>
                     <li>
                         <a href="./Pages/sobre-mi.html" >SOBRE MÍ</a>
@@ -38,7 +42,7 @@
        </nav>
     </header>
     <a href="./Pages/caso-de-estudio.html">
-        <div class="container">
+        <div class="contenedores">
             <div class="cards">
                 <article class="card">
                     <div class="card-col-img">
@@ -55,7 +59,7 @@
             </div>
         </div>
     </a>
-        <div class="container">
+        <div class="contenedores">
             <div class="cards">
                 <article class="card">
                     <div class="card-col-img">

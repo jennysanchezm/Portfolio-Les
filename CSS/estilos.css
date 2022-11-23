@@ -13,21 +13,13 @@ img {
 }
 
 @media screen and (max-width: 864px) {
-  .menu {
-    display: none;
-  }
-}
-@media screen and (min-width: 864px) {
-  #toggle-menu {
-    display: none;
-  }
-  .hamburguer {
-    display: none;
+  .checkbtn {
+    display: block;
   }
 }
 /* range: 1200px a 1400px */
 @media screen and (max-width: 1400px) {
-  .container {
+  .contenedores {
     width: 90%;
     background-color: #e9edf0;
     padding: 1.5em;
@@ -102,7 +94,7 @@ img {
   #articulo {
     display: flex;
     flex-direction: column;
-    margin-left: 240px;
+    margin-left: 300px;
   }
   #articulo #infolectura {
     display: flex;
@@ -133,7 +125,7 @@ img {
     margin-right: 80px;
   }
   .description {
-    margin-left: 64px;
+    margin-left: 120px;
   }
   h2 {
     font-weight: lighter;
@@ -141,10 +133,27 @@ img {
   #infolectura {
     margin-bottom: 56px;
   }
+  .checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
 }
 /* range: 992px a 1999px */
 @media screen and (max-width: 1200px) {
-  .container {
+  body {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    margin: 56px;
+  }
+  .contenedores {
     margin: auto;
     width: 90%;
     background-color: #e9edf0;
@@ -282,13 +291,6 @@ img {
   #contacto {
     width: 440px;
   }
-  #toggle-menu {
-    width: 40px;
-    position: absolute;
-    top: 4.8rem;
-    right: 5.3rem;
-    cursor: pointer;
-  }
   #fotointerview {
     width: 520px;
     height: 380px;
@@ -303,6 +305,34 @@ img {
     margin-right: 0px;
     padding-right: 0px;
     width: 440px;
+  }
+}
+@media screen and (max-width: 864px) {
+  .checkbtn {
+    display: block;
+    position: relative;
+    bottom: 51px;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: gray;
+    font-size: small;
+    position: fixed;
+    top: 130px;
+    display: none;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  #check:checked ~ menu {
+    background-color: black;
+    display: block;
+    margin: 40px 40px 40px 40px;
+    height: 100%;
+  }
+  nav {
+    margin: 80px 0px 0px 0px;
   }
 }
 @media screen and (max-width: 817px) {
@@ -343,10 +373,6 @@ img {
     width: 260px;
     height: 275px;
   }
-  nav {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
   h2 {
     width: 500px;
     font-size: 1.9em;
@@ -355,6 +381,9 @@ img {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
+  }
+  #historia-study-case {
+    margin-top: 80px;
   }
 }
 /* range: 576px a 767px */
@@ -600,13 +629,6 @@ img {
     text-align: center;
     font-size: 1.1em;
   }
-  #toggle-menu {
-    width: 40px;
-    position: absolute;
-    top: 4.9rem;
-    right: 4.5rem;
-    cursor: pointer;
-  }
   .description {
     margin-left: 0px;
   }
@@ -624,6 +646,7 @@ img {
     display: flex;
     flex-direction: column;
     margin-left: 4px;
+    margin-top: 40px;
   }
   #fotointerview {
     width: 400px;
@@ -642,13 +665,7 @@ img {
   box-sizing: inherit;
 }
 
-.card-parrafo {
-  color: black;
-  letter-spacing: 0px;
-}
-
-/* CONTAINER */
-.container {
+.contenedores {
   margin: 6em auto;
   width: 90%;
   background-color: #e9edf0;
@@ -659,10 +676,16 @@ img {
   border-width: 0.5px;
   font-family: "Poppins", sans-serif;
 }
-.container:hover {
+.contenedores:hover {
   transform: scale(1.1);
 }
 
+.card-parrafo {
+  color: black;
+  letter-spacing: 0px;
+}
+
+/* CONTAINER */
 .card {
   display: flex;
   align-items: center;
@@ -746,7 +769,6 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: black;
-  margin: 56px;
 }
 
 #presentacion {
